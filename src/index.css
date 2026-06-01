@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  /* Custom high-trust trust/insurance color palette */
+  --color-primary-50: #f4f6fc;
+  --color-primary-100: #e8ecf8;
+  --color-primary-200: #d4daf2;
+  --color-primary-500: #3b52d9;
+  --color-primary-600: #293dbf;
+  --color-primary-700: #202fa1;
+  --color-primary-800: #1b2680;
+  --color-primary-950: #0a0d26;
+  
+  --color-accent-500: #10b981;
+  --color-accent-600: #059669;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-800 bg-slate-50 font-sans selection:bg-primary-100 selection:text-primary-800;
+  }
+}
+
+/* Print utility to format policy layout perfectly on paper or PDF export */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
+

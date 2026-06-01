@@ -1,0 +1,6 @@
+{
+  "name": "Insurance Compare - Política de Privacidade",
+  "description": "Página de Política de Privacidade de alta confiabilidade para o aplicativo mobile Insurance Compare, em conformidade com as diretrizes do Google Play Console e AdMob.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
